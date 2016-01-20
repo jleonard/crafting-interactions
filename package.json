@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "develop": "harp server src --port 3000"
+    "develop": "harp server src --port 3000",
+    "compile": "harp compile src dist"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -13,6 +14,7 @@
     "ejs": "~2.3.3",
     "express": "~4.13.1",
     "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "worldbuilder": "git://github.com/jleonard/worldbuilder.git"
   }
 }

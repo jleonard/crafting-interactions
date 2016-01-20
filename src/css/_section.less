@@ -1,0 +1,16 @@
+section{
+  background-color: white;
+  #transition._(top,0.45s);
+  #transition._(background-color,1.5s);
+  /*
+  position: fixed;
+  top: 0;
+  left: 0;
+  */
+  width: 100vw;
+  min-height: 100vh;
+  &[data-state='off']{
+    top: -100%;
+  }
+  padding: 10%;
+}

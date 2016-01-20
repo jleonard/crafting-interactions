@@ -1,0 +1,42 @@
+// typography
+// -------------------------------
+// 1, 1.5, 2.25, 3.375, 5.063, 7.594, 11.391
+
+h1,h2,h3,h4,h5,h6,p,blockquote{
+  margin-top: @baseUnit;
+  margin-bottom: @baseUnit;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: @sans;
+  font-weight: 700;
+}
+
+h1{
+  font-size: 7.594rem;
+  &.major{
+    font-size: 11.391rem;
+  }
+}
+
+h2{
+  font-size: 5.063rem;
+}
+
+p{
+  font-size: 2.25rem;
+}
+
+
+blockquote{
+  border-left: 8px solid @yellow;
+  font-size: @baseUnit * 1.5;
+  padding: @baseUnit;
+  a{
+    text-decoration: none;
+  }
+  cite{
+    display: block;
+    font-size: .75em;
+  }
+}
