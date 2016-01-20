@@ -1,0 +1,24 @@
+#device{
+  .browser(@width:200px){
+    width: @width;
+    height: @width * .65;
+    border-top: (@width * .065 * 1px) solid #d6d6d6;
+  }
+}
+
+.device.browser{
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+  #device.browser(400px);
+  background-color: white;
+}
+
+// browser dots
+// ----------------------------------
+.device.browser{
+  .dots{
+    #layout > .horizontal(0px);
+    border-radius: 20px;
+  }
+}

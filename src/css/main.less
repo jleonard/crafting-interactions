@@ -1,0 +1,168 @@
+//
+//   .-"""-.
+//  / _   _ \
+//  ](_' `_)[
+//  `-. x ,-' 
+//    |~~~|
+//    `---'
+//
+
+// variables
+// -------------------------------
+
+// folder paths
+@fontPath : '../fonts/';
+@imgPath : '../img/';
+
+// font-stacks
+@serif : 'Vollkorn', serif;
+@sans : 'PT Sans', sans-serif;
+@mono : 'Source Code Pro', monospace;
+@open : 'Open Sans', sans-serif;
+
+// measurements
+@baseUnit : 1rem;
+@radius   : 3px;
+
+// z-index management
+@zContent      : 1;
+@zUI           : 2;
+@zSystem       : 500;
+@zMeta         : 999999;
+
+// color
+@navy      : #001f3f;
+@blue      : #0074d9;
+@aqua      : #7fdbff; 
+@teal      : #39cccc; 
+@olive     : #3d9970; 
+@green     : #2ecc40;
+@lime      : #01ff70;
+@yellow    : #ffdc00;
+@orange    : #ff851b;
+@red       : #ff4136;
+@maroon    : #85144b;
+@fuchsia   : #f012be;
+@purple    : #b10dc9;
+@black     : #111;
+@gray      : #aaa;
+@slate     : #303030;
+@silver    : #ddd;
+@smoke     : #f5f5f5;
+@white     : #fff;
+@paper     : #fcfaf2;
+@newsprint : #f0ece8;
+@pee       : #f4fd72;
+
+// reset
+*, *:before, *:after{
+  box-sizing: border-box;
+}
+
+// core imports
+// -------------------------------
+@import '_font-face.less';
+@import '_prism.less';
+
+// typography
+// -------------------------------
+// 1, 1.5, 2.25, 3.375, 5.063, 7.594, 11.391
+html{
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+body{
+  -webkit-font-smoothing : antialiased;
+  font-family: @serif;
+  color: @slate;
+  background-color: @paper;
+}
+
+h1,h2,h3,h4,h5,h6,p,blockquote{
+  margin-top: @baseUnit;
+  margin-bottom: @baseUnit;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: @sans;
+  font-weight: 700;
+}
+
+h1{
+  font-size: 7.594rem;
+  &.major{
+    font-size: 11.391rem;
+  }
+}
+
+h2{
+  font-size: 5.063rem;
+}
+
+p{
+  font-size: 2.25rem;
+}
+
+blockquote{
+  //text-align: center;
+  margin-top: @baseUnit * 2;
+  margin-bottom: @baseUnit * 2;
+  max-width: 55%;
+  font-family: @serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 3.375rem;
+  padding-top: @baseUnit;
+  padding-bottom: @baseUnit;
+  padding-left: @baseUnit * 2;
+  //border-left: 10px solid #d2d2d2;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  cite{
+    text-transform: uppercase;
+    display: block;
+    font-size: @baseUnit;
+    font-style: normal;
+    margin-top: @baseUnit;
+    //margin-left: @baseUnit * -1.5;
+    &:before{
+      //content: '\2014';
+      //display: inline-block;
+    }
+  }
+  &:before,&:after{
+    content: '';
+    width: @baseUnit * 18;
+    position: absolute;
+    //left: 50%;
+    //transform: translateX(-50%);
+    height: 1px;
+    background-color: #d2d2d2;
+  }
+  &:before{
+    top: 0;
+  }
+  &:after{
+    bottom: 0;
+  }
+}
+
+pre,code{
+  font-family: @mono;
+  font-weight: 400;
+  &.major{
+    font-size: 2.25rem;
+  }
+}
+
+// macro layouts
+// -------------------------------
+section > .inner{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1300px;
+}
+
+@import '_devices.less';
