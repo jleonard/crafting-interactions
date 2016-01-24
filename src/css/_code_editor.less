@@ -1,0 +1,82 @@
+// code editor section
+// ----------------------------------
+section.editor{
+  #flex.row();
+  > *{
+    width: 50%;
+    padding: @baseUnit;
+    position: relative;
+    > *{
+      #absolute.top-left();
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// code editor : common elements
+// ----------------------------------
+section.editor{
+  textarea{
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    font-size: @sizeMedium;
+    color: transparent;
+    background-color: transparent;
+    font-family: @mono;
+    border: none;
+    resize: none;
+    outline: none;
+    z-index: 1;
+  }
+  pre,code{
+    margin: 0;
+    padding: 0;
+  }
+  div.actions{
+    #initial._(width);
+    #initial._(height);
+    #initial._(top);
+    #initial._(left);
+    #absolute.bottom-left(@baseUnit,@baseUnit); 
+    z-index: 2;
+  }
+}
+
+// code editor css section
+// ----------------------------------
+section.editor{
+  .code{
+    background-color: @slate;
+    position: relative;
+  }
+}
+
+// code editor section : toggle states
+// -----------------------------------------
+section.editor{
+  [data-mode='edit']{
+    textarea{
+      color: @aqua;
+      z-index: 1;
+    }
+    pre{
+      display: none;
+    }
+    .preview{
+      display: none;
+    }
+  }
+  [data-mode='code-view']{
+    textarea{
+      display: none;
+    }
+    pre{
+      z-index: 1;
+    }
+    .preview{
+      display: none;
+    }
+  }
+}

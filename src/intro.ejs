@@ -1,0 +1,22 @@
+<%
+  function rando(len){
+    var str ='';
+    var a = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    for(var ii = 0; ii < len; ii++){
+      str += a[Math.floor(Math.random()*a.length)];
+    }
+    return str;
+  }
+%>
+
+<%- partial('_partials/slide-quote',
+  {
+    quote:'[...] proficiency in a craft is essential to every artist. Therein lies the prime source of creative imagination.',
+    citation: 'Walter Gropius - <em>The Bauhaus Manifesto</em>'
+  })
+%>
+
+<%
+  var eid = rando(5);
+%>
+<%- partial('_partials/slide-code-editor',{id: eid }) %>

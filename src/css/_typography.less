@@ -29,14 +29,26 @@ p{
 
 
 blockquote{
+  &:before{
+    display: none;
+    content: '\201C';
+    vertical-align: sub;
+    font-size: 2em;
+  }
   border-left: 8px solid @yellow;
-  font-size: @baseUnit * 1.5;
+  font-size: @baseUnit * 2.25;
+  font-family: @sans;
+  font-weight: 900;
   padding: @baseUnit;
+  max-width: 65%;
+  margin: 0;
   a{
     text-decoration: none;
   }
   cite{
+    #initial._(font-style);
     display: block;
     font-size: .75em;
+    margin: @baseUnit 0;
   }
 }
