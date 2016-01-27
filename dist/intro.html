@@ -3,34 +3,196 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>page</title>
+    <title>Crafting UX</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <main>
-      <section>
+      <div id="slideshow">
+
+<section class="fancy inverse">
+  <h2>Sketching in code.</h2>
+</section>
+
+<section class="inverse">
+  <h2>Learning how a user interface is constructed will make you a better designer.</h2>
+</section>
+
+<section>
+  <p>All design artifacts go through a translation process when they move from <em>paper</em> or <em>pixels</em> to code.</p>
+  <p>As a designer you want to play an active role in that translation.</p>
+</section>
+
+<section>
+  <p><mark>Translating a design to code can incur costs in unexpected places.</mark></p>
+  <p>It took Medium a <em>month</em> to implement a custom solution for underlining text.</p>
+  <a class="button" href="https://medium.com/designing-medium/crafting-link-underlines-on-medium-7c03a9274f9">Crafting link underlines on Medium</a>
+</section>
+
+<section>
   <blockquote>
     [...] proficiency in a craft is essential to every artist. Therein lies the prime source of creative imagination.
     <cite>Walter Gropius - <em>The Bauhaus Manifesto</em></cite>
   </blockquote>
 </section>
 
+<section class="inverse content fancy">
+  <h1 class="centered">Content<span>copy, data, images, video</span></h1>
+</section>
+<section class="structure fancy">
+  <h1 class="centered">html is Structure</h1>
+</section>
+<section class="inverse style fancy">
+  <h1 class="centered">css is Style</h1>
+</section>
+<section class="action fancy">
+  <h1 class="centered">js is Action</h1>
+</section>
 
-<section id="ygixc" class="fullscreen editor">
+
+
+<section>
+  <h2>HTML</h2>
+  <p>Hyper Text Markup Language</p>
+</section>
+
+<section class="image">
+  <div style="background-image: url(img/cern.jpg)"></div>
+</section>
+
+<section>
+  <p>HTML is a markup language intended for formatting a document with context and structure.</p>
+  <p>HTML is made up of a standard set of <em>tags</em> that are used by every page on the internet. HTML's standardized tag structure is what make search and linking possible.</p>
+</section>
+
+<section>
+  <h2>Here's what <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">the first website</a> looked like.</h2>
+</section>
+
+<section>
+  <p>html wraps your content in <em>tags</em> to give it structural meaning for browsers and search engines.</p>
+</section>
+
+<section class="inverse">
+<pre class="major"><code class="lang-xml">
+&lt;p&gt;This is a paragraph tag.&lt;/p&gt;
+</code></pre>
+</section>
+
+<section class="inverse">
+<pre class="major"><code class="lang-xml">
+&lt;!-- tags can nest. here's an unordered list --&gt;
+&lt;ul&gt;
+  &lt;li&gt;list item one&lt;/li&gt;
+  &lt;li&gt;list item two&lt;/li&gt;
+  &lt;li&gt;list item three&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</section>
+
+<section>
+  <p>The # of <a href="http://www.w3schools.com/tags/" target="_blank">html tags</a> is limited when you consider the amount of variation on the internet.</p>
+  <p>You won't find a tag for every structural element or UI component.</p>
+</section>
+
+<section>
+  <p>Some tags affect the visual appearance of content in the browser.</p>
+</section>
+
+<section class="grid inverse">
+  <div>
+    <button>this is a button</button>
+    <input type="text" value="this is a text input">
+    <select>
+      <option>this is a select</option>
+    </select>
+  </div>
+<pre class="major"><code class="lang-xml">&lt;button&gt;this is a button&lt;/button&gt;
+&lt;input type='text' value='this is a text input'/&gt;
+&lt;select&gt;
+  &lt;option&gt;this is a select&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+</section>
+
+<section>
+  <p>Most tags don't have any specific visual traits associated with them. They exist to wrap your content and give it meaningful structure.</p>
+</section>
+
+<section class="grid inverse">
+  <div>
+    <nav>this is a nav</nav>
+    <header>this is a header</header>
+    <article>this is an article</article>
+    <footer>this is a footer</footer>
+  </div>
+<pre class="major"><code class="lang-xml">&lt;nav&gt;this is a nav&lt;/nav&gt;
+&lt;header&gt;this is a header&lt;/header&gt;
+&lt;article&gt;this is an article&lt;/article&gt;
+&lt;footer&gt;this is a footer&lt;/footer&gt;
+</code></pre>
+</section>
+
+<section>
+  <p>Browsers aren't very judgemental when it comes to how you use tags. As long as your document is well formed the browser will roll with it.</p>
+</section>
+
+<section class="inverse">
+<pre class="major"><code class="lang-xml">&lt;!-- 
+the h1 doesn't have a closing tag
+the browser will get confused 
+the h2 picks up the h1 formatting
+but nothing explodes
+--&gt;
+&lt;h1&gt;headline
+&lt;h2&gt;subhead&lt;/h2&gt;
+</code></pre>
+</section>
+
+<section class="grid inverse">
+  <div>
+    <dog>this is a dog</dog>
+    <cat>this is a cat</cat>
+  </div>
+<pre class="major"><code class="lang-xml">&lt;!-- 
+i invented some tags
+it's bad practice
+but nothing explodes
+--&gt;
+&lt;dog&gt;this is a dog&lt;/dog&gt;
+&lt;cat&gt;this is a cat&lt;/cat&gt;
+</code></pre>
+</section>
+
+<section class="inverse">
+  <h3>Try it on CodePen</h3>
+  <h2><a href="http://bit.ly/1RJSK80" target="_blank">http://bit.ly/1RJSK80</a></h2>
+</section>
+
+
+
+
+
+
+<article id="Daxak" class="fullscreen editor">
 
   <div class="markup">
-    <div class="preview">
-      <p>Hello World</p>
-    </div>
+    
 <pre><code class="lang-xml"><h1>What up</h1>
 </code></pre>
   <textarea>
     Toggle
   </textarea>
+  <div class="preview">
+      <p>Hello World</p>
+    </div>
   <div class="actions">
-    <button>Toggle</button>
+    <!--<button class='edit'>Edit</button>-->
+    <button class="view-code">Code</button>
+    <button class="view-preview">Preview</button>
   </div>
   </div>
 
@@ -45,11 +207,13 @@
 }
 </code></pre>
   </div>
-</section>
+</article>
+</div>
     </main>
     <script title="jQuery CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/prism.js"></script>
     <script title="Code Editor" src="js/code.editor.js"></script>
     <script title="enable tabs in textarea" src="js/textarea.tab.js"></script>
+    <script title="Controls the slide show" src="js/slide.show.js"></script>
   </body>
 </html>

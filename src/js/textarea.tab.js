@@ -1,6 +1,10 @@
 // enable tab key in textarea
 //-----------------------------
-document.querySelector("textarea").addEventListener('keydown',function(e) {
+document.addEventListener('DOMContentLoaded', function(){
+  var elements = document.querySelectorAll('textarea');
+  Array.prototype.forEach.call(elements, function(el, i){
+    el.addEventListener('keydown',function(e) {
+    console.log('tab!');
     if(e.keyCode === 9) { // tab was pressed
         // get caret position/selection
         var start = this.selectionStart;
@@ -21,3 +25,5 @@ document.querySelector("textarea").addEventListener('keydown',function(e) {
         e.preventDefault();
     }
 },false);
+  });
+});

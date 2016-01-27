@@ -5,6 +5,10 @@
 h1,h2,h3,h4,h5,h6,p,blockquote{
   margin-top: @baseUnit;
   margin-bottom: @baseUnit;
+  a,a:visited{
+    text-decoration: none;
+    color: @aqua;
+  }
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -23,8 +27,12 @@ h2{
   font-size: 5.063rem;
 }
 
-p{
+p,h3{
   font-size: 2.25rem;
+}
+
+mark{
+  background-color: @pee;
 }
 
 

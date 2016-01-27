@@ -9,6 +9,27 @@
   }
 %>
 
+<div id='slideshow'>
+
+<section class='fancy inverse'>
+  <h2>Sketching in code.</h2>
+</section>
+
+<section class='inverse'>
+  <h2>Learning how a user interface is constructed will make you a better designer.</h2>
+</section>
+
+<section>
+  <p>All design artifacts go through a translation process when they move from <em>paper</em> or <em>pixels</em> to code.</p>
+  <p>As a designer you want to play an active role in that translation.</p>
+</section>
+
+<section>
+  <p><mark>Translating a design to code can incur costs in unexpected places.</mark></p>
+  <p>It took Medium a <em>month</em> to implement a custom solution for underlining text.</p>
+  <a class="button" href="https://medium.com/designing-medium/crafting-link-underlines-on-medium-7c03a9274f9">Crafting link underlines on Medium</a>
+</section>
+
 <%- partial('_partials/slide-quote',
   {
     quote:'[...] proficiency in a craft is essential to every artist. Therein lies the prime source of creative imagination.',
@@ -16,7 +37,15 @@
   })
 %>
 
+<%- partial('_partials/slide-jumbo',{variation:'inverse content fancy',jumbo:'Content<span>copy, data, images, video</span>'}) %>
+<%- partial('_partials/slide-jumbo',{variation:'structure fancy',jumbo:'html is Structure'}) %>
+<%- partial('_partials/slide-jumbo',{variation:'inverse style fancy',jumbo:'css is Style'}) %>
+<%- partial('_partials/slide-jumbo',{variation:'action fancy',jumbo:'js is Action'}) %>
+
+<%- partial('_partials/html-bit') %>
+
 <%
   var eid = rando(5);
 %>
 <%- partial('_partials/slide-code-editor',{id: eid }) %>
+</div>

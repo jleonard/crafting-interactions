@@ -21,6 +21,7 @@
 @sans : 'PT Sans', sans-serif;
 @mono : 'Source Code Pro', monospace;
 @open : 'Open Sans', sans-serif;
+@cursive : 'Abril Fatface', cursive;
 
 // font-sizes
 @sizeMedium : @baseUnit * 2;
@@ -88,12 +89,29 @@ body{
   color: @slate;
   background-color: @paper;
   margin: 0;
+  font-size: @baseUnit * 2.5;
+}
+
+input,button,select option{
+  font-size: @baseUnit * 2.5;
 }
 
 @import (less) '_typography.less';
 @import (less) '_section.less';
 @import (less) '_code_editor.less';
 @import (less) '_util_classes.less';
+
+/*
+footer{
+  background-color: @svaBlue;
+  min-height: 50vh;
+  padding: 10%;
+  #flex.row();
+  ul{
+    width: 50%;
+  }
+}
+*/
 
 pre,code{
   font-family: @mono;

@@ -1,0 +1,124 @@
+<%
+  function entities(str){
+    return str.replace('/</g','&lt;').replace('/>/g','&gt;');
+  }
+%>
+
+<section>
+  <h2>HTML</h2>
+  <p>Hyper Text Markup Language</p>
+</section>
+
+<%- partial('slide-image',{image:'img/cern.jpg'}) %>
+
+<section>
+  <p>HTML is a markup language intended for formatting a document with context and structure.</p>
+  <p>HTML is made up of a standard set of <em>tags</em> that are used by every page on the internet. HTML's standardized tag structure is what make search and linking possible.</p>
+</section>
+
+<section>
+  <h2>Here's what <a href='http://info.cern.ch/hypertext/WWW/TheProject.html' target='_blank'>the first website</a> looked like.</h2>
+</section>
+
+<section>
+  <p>html wraps your content in <em>tags</em> to give it structural meaning for browsers and search engines.</p>
+</section>
+
+<section class='inverse'>
+<pre class='major'><code class='lang-xml'>
+&lt;p&gt;This is a paragraph tag.&lt;/p&gt;
+</code></pre>
+</section>
+
+<section class='inverse'>
+<pre class='major'><code class='lang-xml'>
+&lt;!-- tags can nest. here's an unordered list --&gt;
+&lt;ul&gt;
+  &lt;li&gt;list item one&lt;/li&gt;
+  &lt;li&gt;list item two&lt;/li&gt;
+  &lt;li&gt;list item three&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+</section>
+
+<section class='inverse'>
+  <h3>Try it on CodePen</h3>
+  <h2><a href='http://bit.ly/1RJSK80' target='_blank'>http://bit.ly/1RJSK80</a></h2>
+</section>
+
+
+<section>
+  <p>The # of <a href='http://www.w3schools.com/tags/' target='_blank'>html tags</a> is limited when you consider the amount of variation on the internet.</p>
+  <p>You won't find a tag for every structural element or UI component.</p>
+</section>
+
+<section>
+  <p>Some tags affect the visual appearance of content in the browser.</p>
+</section>
+
+<section class='grid inverse'>
+  <div>
+    <button>this is a button</button>
+    <input type='text' value='this is a text input'/>
+    <select>
+      <option>this is a select</option>
+    </select>
+  </div>
+<pre class='major'><code class='lang-xml'>&lt;button&gt;this is a button&lt;/button&gt;
+&lt;input type='text' value='this is a text input'/&gt;
+&lt;select&gt;
+  &lt;option&gt;this is a select&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+</section>
+
+<section>
+  <p>Most tags don't have any specific visual traits associated with them. They exist to wrap your content and give it meaningful structure.</p>
+</section>
+
+<section class='grid inverse'>
+  <div>
+    <nav>this is a nav</nav>
+    <header>this is a header</header>
+    <article>this is an article</article>
+    <footer>this is a footer</footer>
+  </div>
+<pre class='major'><code class='lang-xml'>&lt;nav&gt;this is a nav&lt;/nav&gt;
+&lt;header&gt;this is a header&lt;/header&gt;
+&lt;article&gt;this is an article&lt;/article&gt;
+&lt;footer&gt;this is a footer&lt;/footer&gt;
+</code></pre>
+</section>
+
+<section>
+  <p>Browsers aren't very judgemental when it comes to how you use tags. As long as your document is well formed the browser will roll with it.</p>
+</section>
+
+<section class='inverse'>
+<pre class='major'><code class='lang-xml'>&lt;!-- 
+the h1 doesn't have a closing tag
+the browser will get confused 
+the h2 picks up the h1 formatting
+but nothing explodes
+--&gt;
+&lt;h1&gt;headline
+&lt;h2&gt;subhead&lt;/h2&gt;
+</code></pre>
+</section>
+
+<section class='grid inverse'>
+  <div>
+    <dog>this is a dog</dog>
+    <cat>this is a cat</cat>
+  </div>
+<pre class='major'><code class='lang-xml'>&lt;!-- 
+i invented some tags
+it's bad practice
+but nothing explodes
+--&gt;
+&lt;dog&gt;this is a dog&lt;/dog&gt;
+&lt;cat&gt;this is a cat&lt;/cat&gt;
+</code></pre>
+</section>
+
+
