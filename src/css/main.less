@@ -99,8 +99,14 @@ a{
   }
 }
 
-input,button,select option{
-  font-size: @baseUnit * 2.5;
+div.ui-demo{
+  input,button,select optgroup{
+    font-size: @baseUnit * 2.5;
+  }
+  input,button,select{
+    margin-bottom: @baseUnit * 3;
+    display: block;
+  }
 }
 
 @import (less) '_typography.less';
