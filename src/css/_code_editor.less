@@ -39,14 +39,26 @@ article.editor{
   pre,code{
     background-color: @slate;
     margin: 0;
-    //padding: 0;
   }
   div.actions{
-    #initial._(width);
-    #initial._(height);
     #initial._(top);
     #initial._(left);
-    #absolute.bottom-left(@baseUnit,@baseUnit); 
+    #initial._(width);
+    #initial._(height);
+    button{
+      #initial._(width);
+      #initial._(height);
+      #initial._(top);
+      #initial._(left);
+      #initial._(border);
+      font-size: @baseUnit;
+      font-weight: bold;
+      padding: @baseUnit/2 @baseUnit;
+      color: white;
+      background-color: @blue;
+      border-radius: 5px;
+    }
+    #absolute.bottom-left(10px,10px); 
     z-index: 2;
   }
 }
@@ -63,6 +75,10 @@ article.editor{
 // code editor section : toggle states
 // -----------------------------------------
 article.editor{
+  &[data-active]{
+    z-index: 99999;
+    #fixed.top-left();
+  }
   [data-mode='edit']{
     background-color: @slate;
     textarea{

@@ -2,15 +2,29 @@ var curSlide;
 
 document.addEventListener('DOMContentLoaded', function(){
 
+  function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+  }
+
+  var slideshow = document.getElementById('slideshow');
+
+  if(!getParameterByName('lecture')){
+    slideshow.classList.add('web');
+    return;
+  }
+
   // reverse the z index
-  var z = 9999999;
+  var z = 999;
   var slides = document.querySelectorAll('section');
   Array.prototype.forEach.call(slides, function(el, i){
     el.setAttribute('style','z-index:'+z);
     z--;
   });
 
-  var slideshow = document.getElementById('slideshow');
+  
   var firstSlide = slideshow.firstElementChild;
   curSlide = firstSlide;
   firstSlide.focus();

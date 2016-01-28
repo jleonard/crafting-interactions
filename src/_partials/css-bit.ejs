@@ -1,0 +1,37 @@
+<%
+  function rando(len){
+    var str ='';
+    var a = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    for(var ii = 0; ii < len; ii++){
+      str += a[Math.floor(Math.random()*a.length)];
+    }
+    return str;
+  }
+%>
+
+<section>
+  <h2 class='cursive'>css</h2>
+  <p>Cascading Style Sheets</p>
+</section>
+
+<section>
+  <p>css adds color, typography, page composition and animation to the web.</p> 
+  <p>If we didn't have css, everything would look like craigslist.</p>
+</section>
+
+<section>
+  <p>css works by <em>selecting</em> elements on the page and applying styles to them.</p>
+</section>
+
+
+<%- partial('slide-small-image',{image:'img/ExampleCircuit_bb.png', variation: ''}) %>
+
+<section class='inverse'>
+<pre class='major'><code class='lang-css'>
+/* this is a css rule for a paragraph tag */
+p{
+  font-size: 32px;
+  color: #cc3300;
+}
+</code></pre>
+</section>

@@ -2,6 +2,13 @@
 // --------------------------
 document.addEventListener('DOMContentLoaded', function(){
 
+  var toggle = document.querySelector('.editor-toggle');
+  var global = document.getElementById('editor');
+  toggle.addEventListener('click',function(e){
+    console.log('woof');
+    global.getAttribute('data-active') ? global.removeAttribute('data-active') : global.setAttribute('data-active','true');
+  });
+
   var editors = document.querySelectorAll('article.editor');
   Array.prototype.forEach.call(editors, function(el, i){
 
