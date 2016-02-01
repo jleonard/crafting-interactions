@@ -1,0 +1,105 @@
+/*
+// the grid container
+*/
+.grid{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/*
+// the row
+*/
+.row{
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+/*
+//
+// These next two rules
+// are called a clearfix.
+// They fix a weird css
+// behavior that happens
+// when you use the 'float'
+// property to position
+// a child element.
+//
+*/
+.row:before,.row:after{
+  content:'';
+  display: table;
+}
+
+.row:after{
+  clear: both;
+}
+
+/*
+//
+// This is a different type of
+// css selector. It applies to
+// any class that begins with
+// 'column-'. In this case, any
+// column on the page.
+//
+*/
+[class^='column-']{
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/*
+//
+// From here on down it's
+// just the definition of
+// the 12 column widths.
+//
+*/
+.column-1{
+  width: 8.33333333%;
+}
+
+.column-2{
+  width: 16.66666667%;
+}
+
+.column-3{
+  width: 25%;
+}
+
+.column-4{
+  width: 33.33333333%
+}
+
+.column-5{
+  width: 41.66666667%;
+}
+
+.column-6{
+  width: 50%;
+}
+
+.column-7{
+  width: 58.33333333%;
+}
+
+.column-8{
+  width: 66.66666667%;
+}
+
+.column-9{
+  width: 75%;
+}
+
+.column-10{
+  width: 83.33333333%;
+}
+
+.column-11{
+  width: 91.66666667%;
+}
+
+.column-12{
+  width: 100%;
+}
