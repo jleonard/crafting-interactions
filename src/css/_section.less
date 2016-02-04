@@ -22,7 +22,7 @@
 
 section{
   background-color: white;
-  #transition._(all,0.45s);
+  #transition._(transform,0.45s);
   #transition._(background-color,1.5s);
   #fixed.top-left();
   box-shadow: 0px 5px 5px 5px rgba(0,0,0,0.5);
@@ -104,5 +104,18 @@ section.meta{
   }
   a{
     color: @pee;
+  }
+}
+
+.responsive{
+  section{
+    background-color: @svaBlue;
+    color: white;
+    &.inverse{
+      #section._(@slate,white);
+    }
+    &.meta{
+      #section._(@svaRed,@paper);
+    }
   }
 }

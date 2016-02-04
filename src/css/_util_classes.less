@@ -13,3 +13,18 @@
 .cursive{
   font-family: @cursive;
 }
+
+
+
+.show-desktop{
+  display: none;
+}
+
+@media (max-width: @smallDisplay){
+  .hide-small,.hide-mobile{
+    display: none; 
+  }
+  .show-large,.show-desktop{
+    display: block;
+  }
+}

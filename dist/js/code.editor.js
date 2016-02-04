@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
   var toggle = document.querySelector('.editor-toggle');
   var global = document.getElementById('editor');
+  if(!global){return;}
   toggle.addEventListener('click',function(e){
     console.log('woof');
     global.getAttribute('data-active') ? global.removeAttribute('data-active') : global.setAttribute('data-active','true');

@@ -1,0 +1,52 @@
+[class*='demo-']{
+  #util.clearfix();
+  .box{
+    width: 200px;
+    height: 200px;
+    background-color: @slate;
+  }
+}
+
+.demo-stacking{
+  #layout.vertical();
+}
+
+@media (min-width: 1200px){
+  .demo-stacking{
+    #layout.horizontal();
+  }
+}
+
+// hiding showing demo
+// -----------------------------
+.demo-hiding{
+  #layout.horizontal();
+  .box:nth-child(even){
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 1200px){
+  .demo-hiding{
+    .box:nth-child(even){
+      visibility: visible;
+    }
+  }
+}
+
+.demo-what-is{
+  background-color: @svaRed;
+}
+
+// box colors
+.box{
+  &.maroon{
+    background-color: @maroon;
+  }
+  &.orange{
+    background-color: @orange;
+  }
+  &.aqua{
+    background-color: @aqua;
+  }
+}

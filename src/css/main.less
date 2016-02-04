@@ -64,6 +64,8 @@
 @svaGrey   : #4c4d4f;
 @svaRed    : #dc0032;
 
+@smallDisplay : 800px;
+
 // core imports
 // -------------------------------
 @import (less) '_mixins.less';
@@ -125,6 +127,10 @@ pre,code{
   }
 }
 
+li{
+  margin-bottom: @baseUnit * 0.5;
+}
+
 .editor-toggle{
   width: 20px;
   height: 20px;
@@ -138,3 +144,4 @@ pre,code{
 }
 
 @import '_devices.less';
+@import '_demos.less';
