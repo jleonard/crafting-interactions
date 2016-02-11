@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SVA | Crafting UX</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+  <body>
+    <main>
+      <div id="slideshow" class="responsive">
+
+  <section class="inverse" tab-index="0">
+    <h4>Crafting UX Week 5</h4>
+    <h2>Where we learn about Bootstrap</h2>
+  </section>
+
+  <section class="inverse">
+    <h3></h3>
+    <p></p>
+  </section>
+
+  <section class="inverse">
+    <h2><a href="http://github.com" target="_blank">Github</a></h2>
+    <p>The place to go to find open source software.</p>
+  </section>
+
+  <section class="inverse">
+    <h2><a href="http://bower.io/search/" target="_blank">Bower</a></h2>
+    <p>Great for discovering front end tools &amp; libraries on github.</p>
+  </section>
+
+  <section class="inverse">
+    <h2><a href="http://codepen.io" target="_blank">Codepen</a></h2>
+    <p>Where to go when you want to copy/paste a solution into your project.</p>
+  </section>
+
+  <section class="inverse">
+    <h2><a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a></h2>
+    <p>A Q&amp;A site for programmers.</p>
+  </section>
+
+  <section class>
+    <h2>Libraries &amp; Frameworks</h2>
+    <p></p>
+  </section>
+
+  <section class="inverse">
+    <h2><a href="https://jquery.com/" target="_blank">jQuery</a></h2>
+    <p>&ldquo;write less, do more.&rdquo;</p>
+  </section>
+
+  <section class="inverse grid fullscreen" style="padding:30px">
+<pre class="micro lang-js"><code class="micro">
+/* native javascript */
+var elements = document.querySelectorAll('p');
+Array.prototype.forEach.call(elements, function(el, i){
+  el.addEventListener('click',function(e){
+    if (el.classList) {
+      el.classList.toggle('active');
+    } else {
+      var classes = el.'active'.split(' ');
+      var existingIndex = classes.indexOf('active');
+
+      if (existingIndex >= 0)
+        classes.splice(existingIndex, 1);
+      else
+        classes.push('active');
+
+      el.className = classes.join(' ');
+    }
+  });
+});
+</code></pre>
+<pre class="micro lang-js"><code class="micro">
+/* jquery */
+$('p').on('click',function(e){
+  $(this).toggleClass('active')
+});
+</code></pre>
+  </section>
+
+  <section class="inverse">
+    <h2><a href="https://facebook.github.io/react/" target="_blank">React</a></h2>
+    <p>&ldquo;A javascript library for building user interfaces.&rdquo;</p>
+  </section>
+
+  <section class="inverse">
+    <h2><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a></h2>
+    <p>&ldquo;...the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.&rdquo;</p>
+  </section>
+
+  <section>
+    <h2>In class activity</h2>
+    <p>Extend the responsive nav activity by using bootstrap to add a responsive grid</p>
+    <img src="img/grid-1.png">
+    <img src="img/grid-2.png">
+    <img src="img/grid-3.png">
+    <h3>Get the bootstrap activity <a href="http://bit.ly/1S3uxK1">bit.ly/1S3uxK1</a></h3>
+  </section>
+
+  <section class="meta">
+    <h3>Today's slides can be found at:</h3>
+    <h2><a href="http://bit.ly/1SvR5DK" target="_blank">bit.ly/1SvR5DK</a></h2>
+  </section>
+
+
+
+</div>
+    </main>
+    <script title="jQuery CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/prism.js"></script>
+    <script title="Code Editor" src="js/code.editor.js"></script>
+    <script title="enable tabs in textarea" src="js/textarea.tab.js"></script>
+    <script title="Controls the slide show" src="js/slide.show.js"></script>
+  </body>
+</html>
