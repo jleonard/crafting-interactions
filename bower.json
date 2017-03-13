@@ -1,0 +1,16 @@
+{
+  "name": "crafting-interactions",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jleonard/crafting-interactions",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0"
+  }
+}
