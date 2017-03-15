@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "npm run compile && node ./bin/www",
+    "start": "node ./bin/www",
     "develop": "harp server src --port 3000",
     "compile": "harp compile src dist"
   },
