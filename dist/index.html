@@ -12,9 +12,7 @@
   </head>
   <body>
     <main>
-      <button class="editor-toggle"></button>
-
-<div id="slideshow">
+      <div>
 
 <section class="meta">
   <h2>Before we get started.</h2>
@@ -27,7 +25,7 @@
 </section>
 
 <section>
-  <h2>Why are we coding in this class?</h2>
+  <h2>Why are we coding?</h2>
 </section>
 
 <section>
@@ -47,7 +45,7 @@
 </section>
 
 <section>
-  <h2>Today we're going to do a quick overview of html + css</h2>
+  <h2>This week we'll focus on html &amp; css. In the coming weeks we'll incorporate javascript.</h2>
   <div class="grid">
     <div class="column-4-of-12">
       <h3>HTML</h3>
@@ -67,7 +65,7 @@
 
 <section class="inverse monospace">
   <h2>HTML</h2>
-  <p>All the HTML you need to know to get started.</p>
+  <p>Here's all the HTML you need to know to get started.</p>
 </section>
 
 <section class="inverse monospace">
@@ -139,7 +137,6 @@ Tags give content meaning and structure.
 
 <section class="inverse monospace">
   <h2>CSS</h2>
-  <p>All the CSS you need to know to get started.</p>
 </section>
 
 <section class="inverse monospace">
@@ -161,211 +158,20 @@ p{
 </code></pre>
 </section>
 
-<section class="meta">
-  <h3>If you don't have a code editor on your machine <br> go download Sublime Text at</h3>
-  <h2><a href="http://bit.ly/1nQa2UL" target="_blank">http://bit.ly/1nQa2UL</a></h2>
-</section>
+<section class="meta inverse">
 
-<section class="fancy inverse">
-  <h2>Sketching in code</h2>
-</section>
+  <h3>Next week's assignment</h3>
 
-<!--
-<section class='inverse'>
-  <h2>Learning how a user interface is constructed will make you a better designer.</h2>
-</section>
--->
+    <p class="major">
+      Read <a href="http://alistapart.com/article/language-of-modular-design">The Language of Modular Design</a> by Alla Kholmatova. We'll discuss in class next week. 
+    </p>
 
-<!--
-<section>
-  <p><mark>Translating a design to code can incur costs in unexpected places.</mark></p>
-  <p>It took Medium a <em>month</em> to implement a custom solution for underlining text.</p>
-  <a class="button" href="https://medium.com/designing-medium/crafting-link-underlines-on-medium-7c03a9274f9">Crafting link underlines on Medium</a>
-</section>
--->
-<section>
-  <p>Today we're going to explore how we give an experience style &amp; structure.</p>
-</section>
-
-<section>
-  <p>Style &amp; structure are two of the four major components that make up web experiences.</p>
-</section>
-
-<section class="inverse content fancy">
-  <h1 class="centered">Content<span>copy, data, images, video</span></h1>
-</section>
-<section class="structure fancy">
-  <h1 class="centered">Structure</h1>
-</section>
-<section class="inverse style fancy">
-  <h1 class="centered">Style</h1>
-</section>
-<section class="action fancy">
-  <h1 class="centered">Action</h1>
-</section>
-
-<section>
-  <p>When we talk about the web platform, <em>html</em> gives structure to content and <em>css</em> gives it style.</p>
+    <h3>Today's lecture can be found at:</h3>
+    <h2><a href="bit.ly/1OSjX55" target="_blank">bit.ly/1OSjX55</a></h2>
+    
 </section>
 
 
-
-<section>
-  <h2 class="cursive">html</h2>
-  <p>Hyper Text Markup Language</p>
-</section>
-
-<section class="image">
-  <div style="background-image: url(img/cern.jpg)"></div>
-</section>
-
-<section>
-  <p>html's standardized tag structure is what makes the internet possible.</p>
-  <p>It provides a common language that all pages adhere to. Without this there would be no search or linking.</p>
-</section>
-
-<section>
-  <p>Here's what <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">the first website</a> looked like.</p>
-</section>
-
-<section class="inverse">
-<pre class="major"><code class="lang-xml">
-&lt;p&gt;This is a paragraph tag.&lt;/p&gt;
-</code></pre>
-</section>
-
-<section class="inverse">
-<pre class="major"><code class="lang-xml">
-&lt;!-- tags can nest. here's an unordered list --&gt;
-&lt;ul&gt;
-  &lt;li&gt;list item one&lt;/li&gt;
-  &lt;li&gt;list item two&lt;/li&gt;
-  &lt;li&gt;list item three&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-</section>
-
-<section class="meta">
-  <h3>Try it on CodePen</h3>
-  <h2><a href="http://bit.ly/1RJSK80" target="_blank">http://bit.ly/1RJSK80</a></h2>
-</section>
-
-
-<section>
-  <p>The # of <a href="http://www.w3schools.com/tags/" target="_blank">html tags</a> is limited when you consider the amount of variation on the internet.</p>
-  <p>You won't find a tag for every structural element or UI component.</p>
-</section>
-
-<section>
-  <p>Some tags affect the visual appearance of content in the browser.</p>
-</section>
-
-<section class="grid inverse">
-  <div class="ui-demo">
-    <button>this is a button</button>
-    <input type="text" value="this is a text input">
-    <select>
-      <optgroup>
-        <option>this is a select</option>
-      </optgroup>
-    </select>
-  </div>
-<pre class="minor"><code class="minor lang-xml">&lt;button&gt;this is a button&lt;/button&gt;
-&lt;input type='text' value='this is a text input'/&gt;
-&lt;select&gt;
-  &lt;optgroup&gt;
-    &lt;option&gt;this is a select&lt;/option&gt;
-  &lt;/optgroup&gt;
-&lt;/select&gt;
-</code></pre>
-</section>
-
-<section>
-  <p>Most tags don't have any specific visual traits associated with them. They exist to wrap your content and give it meaningful structure. That's important for things like search engines that crawl sites to understand what is being presented to the user.</p>
-</section>
-
-<section class="grid inverse">
-  <div>
-    <nav>this is a nav</nav>
-    <header>this is a header</header>
-    <article>this is an article</article>
-    <footer>this is a footer</footer>
-  </div>
-<pre class="major"><code class="lang-xml">&lt;nav&gt;this is a nav&lt;/nav&gt;
-&lt;header&gt;this is a header&lt;/header&gt;
-&lt;article&gt;this is an article&lt;/article&gt;
-&lt;footer&gt;this is a footer&lt;/footer&gt;
-</code></pre>
-</section>
-
-<section>
-  <p>Browsers aren't too strict when it comes to interpreting your html. As long as your document is well formed the browser will probably roll with it.</p>
-</section>
-
-<section class="inverse">
-<pre class="major"><code class="lang-xml">&lt;!-- 
-the h1 doesn't have a closing tag
-the browser will get confused 
-the h2 picks up the h1 formatting
-but nothing explodes
---&gt;
-&lt;h1&gt;headline
-&lt;h2&gt;subhead&lt;/h2&gt;
-</code></pre>
-</section>
-
-<section class="grid inverse">
-  <div>
-    <dog>this is a dog</dog>
-    <cat>this is a cat</cat>
-  </div>
-<pre class="major"><code class="lang-xml">&lt;!-- 
-i invented some tags
-it's bad practice
-but nothing explodes
---&gt;
-&lt;dog&gt;this is a dog&lt;/dog&gt;
-&lt;cat&gt;this is a cat&lt;/cat&gt;
-</code></pre>
-</section>
-
-
-
-
-
-
-<section>
-  <h2 class="cursive">css</h2>
-  <p>Cascading Style Sheets</p>
-</section>
-
-<section>
-  <p>css adds color, typography, page composition and animation to the web.</p> 
-  <p>If we didn't have css, everything would look like craigslist.</p>
-</section>
-
-<section>
-  <p>css works by <em>selecting</em> elements on the page and applying styles to them.</p>
-</section>
-
-
-<section class="minor">
-  <img src="img/ExampleCircuit_bb.png" class="centered">
-</section>
-
-<section class="inverse">
-<pre class="major"><code class="lang-css">
-/* this is a css rule for a paragraph tag */
-p{
-  font-size: 32px;
-  color: #cc3300;
-}
-</code></pre>
-</section>
-
-<section class="meta">
-  <h3>In class activity.<br>Sketching with css &amp; html in <a href="codepen.io" target="_blank">codepen</a>.</h3>
-</section>
 
 <section class="meta">
   <h3>Suggested reading</h3>
@@ -385,82 +191,34 @@ p{
   </div>
 </section>
 
-<section class="meta inverse">
+<section class="minor">
+<footer>
 
-  <h3>Week 3 assignment</h3>
-  <div class="grid">
-    <div class="col-25">
-      <img src="img/component.png">
-      <a class="minor" href="downloads/comment.sketch" target="_blank"><h4>Download the Sketch file</h4></a>
-    </div>
+  <ul>
+    <h4>Learning resources</h4>
+    <li><a href="http://www.codecademy.com/en/tracks/web">Codecademy</a></li>
+    <li><a href="http://css-tricks.com/">css tricks</a></li>
+    <li><a href="http://www.w3schools.com/">w3schools</a></li>
+    <li><a href="http://www.html5rocks.com/en/">html5 rocks</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/Learn/HTML">MDN (Mozilla Developer Network)</a></li>
+    <li><a href="http://webdesign.tutsplus.com/tutorials/the-best-way-to-learn-css-2--webdesign-11906">The best way to learn CSS</a></li>
+    <li><a href="http://htmldog.com/reference/cssproperties/">All CSS Properties</a></li>
+  </ul>
 
-    <div class="col-75">
-      <h4>1. The Activity</h4>
-      <p class="minor">This is a comment component from a larger application.
-    This week’s assignment is to see how far you can get in
-    translating pixels to code. Use this pen as a starting point:
-    <a href="http://codepen.io/jleonard/pen/yejbWr" target="_blank">http://codepen.io/jleonard/pen/yejbWr</a>
-    <br>
-    Visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS</a>
-    and look into the margin, padding, border-radius and 
-    box-shadow properties to help complete the assignment.
-    <br>
-    Email <a href="mailto:thejohnleonard@gmail.com">me</a> with questions. 
-    When you're done, send me a codepen url.</p>
+  <ul>
+    <h4>Tools</h4>
+    <li><a href="http://validator.w3.org/#validate_by_input">w3c's markup validation service</a></li>
+    <li><a href="http://codepen.io/">codepen.io</a></li>
+    <li><a href="https://developer.chrome.com/devtools">Chrome DevTools</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">MDN Color docs</a></li>
+    <li><a href="http://colorrrs.com/">Colorrrs</a></li>
+    <li><a href="http://hellohappy.org/beautiful-web-type/">Beautiful Web Type</a></li>
+    <li><a href="https://www.google.com/fonts/">Google Web Fonts</a></li>
+  </ul>
 
-    <h4>2. The Reading</h4>
-    <p class="minor">
-      Read <a href="http://alistapart.com/article/language-of-modular-design">The Language of Modular Design</a> by Alla Kholmatova. We'll discuss in class next week. 
-    </p>
-    </div>
-
-  </div>
-
-
+</footer>
 </section>
 
-<section class="meta">
-  <h3>Today's lecture can be found at:</h3>
-  <h2><a href="bit.ly/1OSjX55" target="_blank">bit.ly/1OSjX55</a></h2>
-</section>
-
-
-
-<article id="editor" class="fullscreen editor">
-
-  <div class="markup">
-    
-<pre><code class="lang-xml">&lt;!-- html --&gt;
-&lt;p&gt;hello world&lt;/p&gt;
-</code></pre>
-  <textarea>
-<!-- html -->
-&lt;p&gt;hello world&lt;/p&gt;
-  </textarea>
-  <div class="preview">
-<!-- html -->
-<p>hello world</p>
-  </div>
-  <div class="actions">
-    <button class="view-code">Code</button>
-    <button class="view-preview">Preview</button>
-  </div>
-  </div>
-
-  <div class="code">
-  <textarea>
-  /* css */
-  p{
-
-  }
-  </textarea>
-<pre><code class="lang-css">/* css */
-p{
-  
-}
-</code></pre>
-  </div>
-</article>
 </div>
     </main>
     <script title="jQuery CDN" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

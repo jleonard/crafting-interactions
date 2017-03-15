@@ -9,9 +9,8 @@
   }
 %>
 
-<button class='editor-toggle'></button>
 
-<div id='slideshow'>
+<div>
 
 <%- partial('_slides-2016/_introduction',{}) %>
 <%- partial('_slides-2016/_everything-html',{}) %>
@@ -19,113 +18,4 @@
 
 <%- partial('_slides-2016/_outro',{}) %>
 
-<section class='meta'>
-  <h3>If you don't have a code editor on your machine <br/> go download Sublime Text at</h3>
-  <h2><a href='http://bit.ly/1nQa2UL' target='_blank'>http://bit.ly/1nQa2UL</a></h2>
-</section>
-
-<section class='fancy inverse'>
-  <h2>Sketching in code</h2>
-</section>
-
-<!--
-<section class='inverse'>
-  <h2>Learning how a user interface is constructed will make you a better designer.</h2>
-</section>
--->
-
-<!--
-<section>
-  <p><mark>Translating a design to code can incur costs in unexpected places.</mark></p>
-  <p>It took Medium a <em>month</em> to implement a custom solution for underlining text.</p>
-  <a class="button" href="https://medium.com/designing-medium/crafting-link-underlines-on-medium-7c03a9274f9">Crafting link underlines on Medium</a>
-</section>
--->
-<section>
-  <p>Today we're going to explore how we give an experience style &amp; structure.</p>
-</section>
-
-<section>
-  <p>Style &amp; structure are two of the four major components that make up web experiences.</p>
-</section>
-
-<%- partial('_partials/slide-jumbo',{variation:'inverse content fancy',jumbo:'Content<span>copy, data, images, video</span>'}) %>
-<%- partial('_partials/slide-jumbo',{variation:'structure fancy',jumbo:'Structure'}) %>
-<%- partial('_partials/slide-jumbo',{variation:'inverse style fancy',jumbo:'Style'}) %>
-<%- partial('_partials/slide-jumbo',{variation:'action fancy',jumbo:'Action'}) %>
-
-<section>
-  <p>When we talk about the web platform, <em>html</em> gives structure to content and <em>css</em> gives it style.</p>
-</section>
-
-<%- partial('_partials/html-bit') %>
-
-<%- partial('_partials/css-bit') %>
-
-<section class='meta'>
-  <h3>In class activity.<br/>Sketching with css &amp; html in <a href='codepen.io' target="_blank">codepen</a>.</h3>
-</section>
-
-<section class='meta'>
-  <h3>Suggested reading</h3>
-  <div class='grid'>
-    <div>
-      <a href='http://abookapart.com/products/html5-for-web-designers' target='_blank'>
-        <h4>html5 for web designers</h4>
-        <img style='max-width:100%' src='img/html5-book.jpg'/>
-      </a>
-    </div>
-    <div>
-      <a href='http://abookapart.com/products/css3-for-web-designers' target='_blank'>
-        <h4>css3 for web designers</h4>
-        <img style='max-width:100%' src='img/css3-book.jpg'/>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class='meta inverse'>
-
-  <h3>Week 3 assignment</h3>
-  <div class='grid'>
-    <div class='col-25'>
-      <img src='img/component.png'/>
-      <a class='minor' href='downloads/comment.sketch' target="_blank"><h4>Download the Sketch file</h4></a>
-    </div>
-
-    <div class='col-75'>
-      <h4>1. The Activity</h4>
-      <p class='minor'>This is a comment component from a larger application.
-    This week’s assignment is to see how far you can get in
-    translating pixels to code. Use this pen as a starting point:
-    <a href='http://codepen.io/jleonard/pen/yejbWr' target='_blank'>http://codepen.io/jleonard/pen/yejbWr</a>
-    <br/>
-    Visit <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target='_blank'>https://developer.mozilla.org/en-US/docs/Web/CSS</a>
-    and look into the margin, padding, border-radius and 
-    box-shadow properties to help complete the assignment.
-    <br/>
-    Email <a href='mailto:thejohnleonard@gmail.com'>me</a> with questions. 
-    When you're done, send me a codepen url.</p>
-
-    <h4>2. The Reading</h4>
-    <p class='minor'>
-      Read <a href='http://alistapart.com/article/language-of-modular-design'>The Language of Modular Design</a> by Alla Kholmatova. We'll discuss in class next week. 
-    </p>
-    </div>
-
-  </div>
-
-
-</section>
-
-<section class='meta'>
-  <h3>Today's lecture can be found at:</h3>
-  <h2><a href='bit.ly/1OSjX55' target='_blank'>bit.ly/1OSjX55</a></h2>
-</section>
-
-
-<%
-  var eid = rando(5);
-%>
-<%- partial('_partials/slide-code-editor',{id: 'editor' }) %>
 </div>
