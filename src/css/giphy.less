@@ -1,0 +1,96 @@
+@import (less) '_initial.less';
+
+
+.bg(@img){
+  background-image: url(@img);
+  background-size: cover;
+}
+
+@base-unit: 16px;
+
+#layout{
+
+  .horizontal(@gutter:@base-unit, @justify:flex-start){
+    #flex > .row();
+    #flex > .wrap(no-wrap);
+    #flex > .justify(@justify);
+    > *{
+      #initial > ._(margin-bottom);
+      flex-shrink: 0;
+      margin-right: @gutter;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+
+  .vertical(@gutter:@base-unit){
+    #flex > .column();
+    #flex > .wrap(wrap);
+    > *{
+      #initial > ._(margin-right);
+      margin-bottom: @gutter;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+}
+
+// flex box conveniences
+//-------------------------------
+#flex{
+
+  .row(){
+    display: flex;
+    flex-flow: row;
+  }
+
+  .column(){
+    display: flex;
+    flex-flow: column;
+  }
+
+  .wrap(@val:wrap){
+    flex-wrap: @val;
+  }
+
+  .justify(@val:flex-start){
+    justify-content: @val;
+  }
+
+}
+
+.horizontal-layout{
+  #layout.horizontal();
+}
+
+.panel{
+  width: 200px;
+  height: 200px;
+  &:nth-child(4){
+    .bg('https://media.giphy.com/media/MKcxSyppSD6j6/giphy.gif');
+  }
+  &:nth-child(2){
+    .bg('https://media.giphy.com/media/rkq3SAXOPLU7S/giphy.gif');
+  }
+  &:nth-child(3){
+    .bg('https://media.giphy.com/media/14ivBLRRRmyQw0/giphy.gif');
+  }
+  &:nth-child(1){
+    .bg('https://media.giphy.com/media/3o7bukXO7ftpp8EnnO/giphy.gif');
+  }
+}
+
+section{
+  box-shadow: 10px 10px pink;
+  padding: 20px;
+  transform: rotate(-2deg) translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #f5f5f5;
+}
+
+

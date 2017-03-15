@@ -66,12 +66,18 @@
 
 @smallDisplay : 800px;
 
+@grid-gutter: 20px;
+
+@breakpoint-medium : 768px;
+
+@breakpoint-large  : 1025px;
+
 // core imports
 // -------------------------------
 @import (less) '_mixins.less';
 @import (less) '_font-face.less';
 @import (less) '_prism.less';
-
+@import (less) '_grid.less';
 
 
 // reset
@@ -149,6 +155,8 @@ li{
     outline: none;
   }
 }
+
+.grid{ @grid(); }
 
 @import '_devices.less';
 @import '_demos.less';

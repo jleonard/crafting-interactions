@@ -6,24 +6,22 @@
 
 <section class='inverse monospace'>
   <h2>HTML</h2>
-  <p>Everything you need to understand about HTML for this class.</p>
+  <p>Here's all the HTML you need to know to get started.</p>
 </section>
 
-<section class='inverse monspace'>
+<section class='inverse monospace'>
 <p>HTML is comprised of tags.</p>
-<pre class='major'><code class='lang-xml'>
-&lt;p&gt;
+<pre class='major'><code class='lang-xml'>&lt;p&gt;
 This is a paragraph tag. 
 Tags give content meaning and structure. 
 &lt;/p&gt;
 </code></pre>
 </section>
 
-<section class='inverse monspace'>
+<section class='inverse monospace'>
 <p>Tags can nest inside other tags. HTML documents are trees of nested tags.</p>
 <p>Here's an unordered list with nested list items</p>
-<pre class='major'><code class='lang-xml'>
-&lt;ul&gt;
+<pre class='major'><code class='lang-xml'>&lt;ul&gt;
   &lt;li&gt;list item&lt;/li&gt;
   &lt;li&gt;list item&lt;/li&gt;
   &lt;li&gt;list item&lt;/li&gt;
@@ -31,117 +29,47 @@ Tags give content meaning and structure.
 </code></pre>
 </section>
 
-<section class='inverse monspace'>
+<section class='inverse monospace'>
+<p>Some tags are <i>self closing</i>.</p>
+<p><strong>br</strong> (line break) is an example.</p>
+<pre class='major'><code class='lang-xml'>&lt;br/&gt;
+</code></pre>
+</section>
+
+<section class='inverse monospace'>
 <p>Tags can have attributes.</p>
 <p>The <strong>image</strong> tag (img) has a source attribute (src) that points to a file.</p>
-<pre class='major'><code class='lang-xml'>
-&lt;img src="logo.png"/&gt;
+<pre class='major'><code class='lang-xml'>&lt;img src="logo.png"/&gt;
 </code></pre>
+
+<p><br/>class is how we target a tag for styling with css.</p>
+<pre class='major'><code class='lang-xml'>&lt;p class="lead"&gt;Lead paragraph&lt;/p&gt;
+</code></pre>
+<p><br/>id gives an element a unique value. It's helpful for targeting an item with javascript.</p>
+<pre class='major'><code class='lang-xml'>&lt;button id='product-1234'&gt;Add to cart&lt;/button&gt;
+</code></pre>
+
 </section>
 
-<section class='inverse monspace'>
-<p>Not every element has an opening and closing tag. Some tags are called <i>self closing</i></p>
-<p>The <strong>image</strong> and <strong>br</strong> (line break) tags are two examples.</p>
-<pre class='major'><code class='lang-xml'>
-&lt;img src="logo.png"/&gt;
-&lt;br/&gt;
-</code></pre>
+<section class='monospace'>
+  <p>This is what <a href='http://info.cern.ch/hypertext/WWW/TheProject.html' target='_blank'>the first website</a> looked like.</p>
 </section>
 
-<%- partial('slide-image',{image:'img/cern.jpg'}) %>
+<%- partial('../_partials/slide-image',{image:'img/cern.jpg'}) %>
 
-<section>
+<section class='monospace'>
   <p>HTML tags are what give pages on the internet a common structure.</p>
   <p>Without it there wouldn't be any of the interoperability that makes searching and linking possible.</p>
 </section>
 
-<section>
-  <p>Here's what <a href='http://info.cern.ch/hypertext/WWW/TheProject.html' target='_blank'>the first website</a> looked like.</p>
-</section>
-
-
-<section class='meta'>
-  <h3>Try it on CodePen</h3>
-  <h2><a href='http://bit.ly/1RJSK80' target='_blank'>http://bit.ly/1RJSK80</a></h2>
-</section>
-
-
-<section>
+<section class='monospace'>
   <p>The # of <a href='http://www.w3schools.com/tags/' target='_blank'>html tags</a> is limited when you consider the amount of variation on the internet.</p>
   <p>You won't find a tag for every structural element or UI component.</p>
 </section>
 
-<section>
-  <p>Some tags affect the visual appearance of content in the browser.</p>
-</section>
+<section class='monospace'>
+  <p>Most tags don't have any specific visual traits associated with them. They exist to wrap your content and give it meaningful structure.</p>
 
-<section class='grid inverse'>
-  <div class='ui-demo'>
-    <button>this is a button</button>
-    <input type='text' value='this is a text input'/>
-    <select>
-      <optgroup>
-        <option>this is a select</option>
-      </optgroup>
-    </select>
-  </div>
-<pre class='minor'><code class='minor lang-xml'>&lt;button&gt;this is a button&lt;/button&gt;
-&lt;input type='text' value='this is a text input'/&gt;
-&lt;select&gt;
-  &lt;optgroup&gt;
-    &lt;option&gt;this is a select&lt;/option&gt;
-  &lt;/optgroup&gt;
-&lt;/select&gt;
-</code></pre>
+  <p>The visual appearance of the page is where the next technology, CSS, comes into play</p>
 </section>
-
-<section>
-  <p>Most tags don't have any specific visual traits associated with them. They exist to wrap your content and give it meaningful structure. That's important for things like search engines that crawl sites to understand what is being presented to the user.</p>
-</section>
-
-<section class='grid inverse'>
-  <div>
-    <nav>this is a nav</nav>
-    <header>this is a header</header>
-    <article>this is an article</article>
-    <footer>this is a footer</footer>
-  </div>
-<pre class='major'><code class='lang-xml'>&lt;nav&gt;this is a nav&lt;/nav&gt;
-&lt;header&gt;this is a header&lt;/header&gt;
-&lt;article&gt;this is an article&lt;/article&gt;
-&lt;footer&gt;this is a footer&lt;/footer&gt;
-</code></pre>
-</section>
-
-<section>
-  <p>Browsers aren't too strict when it comes to interpreting your html. As long as your document is well formed the browser will probably roll with it.</p>
-</section>
-
-<section class='inverse'>
-<pre class='major'><code class='lang-xml'>&lt;!-- 
-the h1 doesn't have a closing tag
-the browser will get confused 
-the h2 picks up the h1 formatting
-but nothing explodes
---&gt;
-&lt;h1&gt;headline
-&lt;h2&gt;subhead&lt;/h2&gt;
-</code></pre>
-</section>
-
-<section class='grid inverse'>
-  <div>
-    <dog>this is a dog</dog>
-    <cat>this is a cat</cat>
-  </div>
-<pre class='major'><code class='lang-xml'>&lt;!-- 
-i invented some tags
-it's bad practice
-but nothing explodes
---&gt;
-&lt;dog&gt;this is a dog&lt;/dog&gt;
-&lt;cat&gt;this is a cat&lt;/cat&gt;
-</code></pre>
-</section>
-
 
