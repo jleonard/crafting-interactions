@@ -12,7 +12,235 @@
   </head>
   <body>
     <main>
-      <div id="slideshow" class="responsive">
+      <div class="responsive">
+  
+  <section class="inverse monospace">
+
+<h2>Recap</h2>
+<p>Last week we covered the basics of html &amp; css.</p> <p>We learned that with html you <em>markup</em> a document with <em>tags</em> to give the content meaning &amp; structure.</p> <p>We learned that css is where style is applied to give a document qualities like color, typography, spacing and layout.</p>
+
+  <div class="grid">
+    <div class="column-6-of-12">
+<pre class="major"><code class="lang-xml">&lt;!-- html gives structure --&gt;
+&lt;p&gt;
+This is a paragraph tag. 
+&lt;/p&gt;</code></pre>
+    </div>
+
+    <div class="column-6-of-12">
+<pre class="major"><code class="lang-css">/* css gives style */
+p{
+  font-size: 32px;
+  color: red;
+}</code></pre>
+    </div>
+  </div>
+
+</section>
+
+<section class="inverse monospace">
+  <h3>This week</h3>
+  <h2>Responsive Web Design</h2>
+</section>
+
+<section class="monospace">
+  <p>Being responsive is about making dynamic changes to appearance of your website to accommodate for different screen sizes.</p>
+</section>
+
+<section class="monospace inverse">
+  <blockquote>You must be shapeless, formless, like water. When you pour water in a cup, it becomes the cup. When you pour water in a bottle, it becomes the bottle. When you pour water in a teapot, it becomes the teapot. <cite class="author">Bruce Lee</cite></blockquote>
+</section>
+
+<section class="image">
+  <div style="background-image: url('img/responsive_ship.jpg')"></div>
+</section>
+
+<section class="image">
+  <div style="background-image: url('img/btc-dashboard.png')"></div>
+</section>
+
+
+  <section class="monospace">
+  <h3>How do we achieve responsive design?</h3>
+  <ol>
+    <li>Identify <em>breakpoints</em> where your layout needs to change.</li>
+    <li>Scale layout proportionally in-between the breakpoints.</li>
+  </ol>
+</section>
+
+<section class="monospace">
+  <h3>Technique: Media Queries (aka breakpoints)</h3>
+  <p>Conditional rules for changing a view's appearance or functionality.</p>
+  <p>
+    Try it <a href="http://bit.ly/2mY3i7S" target="_blank">http://bit.ly/2mY3i7S</a>
+  </p>
+</section>
+
+<section class="monospace">
+  <h3>Technique: Use fluid measurements to scale proportionally.</h3>
+  <p>Fluid measurements use percentages instead of fixed pixel values.</p>
+  <p>
+    Try it <a href="http://bit.ly/2nSMPBt" target="_blank">http://bit.ly/2nSMPBt</a>
+  </p>
+</section>
+
+<section class="grid inverse">
+<pre class="major" style="overflow:hidden"><code class="lang-css">p{
+  color: #222;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media (min-width: 1200px){ 
+  p{
+    font-size: 64px;
+  }
+}
+</code></pre>
+</section>
+
+
+  <section class="grid-demo">
+
+<h3>The Responsive Grid</h3>
+<p></p>
+
+<div class="m-grid">
+
+  
+  <div class="column-6-of-12"><div></div></div>
+  
+  <div class="column-6-of-12"><div></div></div>
+  
+
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+    <div class="column-1-of-12"><div></div></div>
+  
+
+  
+    <div class="column-2-of-12"><div></div></div>
+  
+    <div class="column-2-of-12"><div></div></div>
+  
+    <div class="column-2-of-12"><div></div></div>
+  
+    <div class="column-2-of-12"><div></div></div>
+  
+    <div class="column-2-of-12"><div></div></div>
+  
+    <div class="column-2-of-12"><div></div></div>
+  
+
+  
+    <div class="column-4-of-12"><div></div></div>
+  
+    <div class="column-4-of-12"><div></div></div>
+  
+    <div class="column-4-of-12"><div></div></div>
+  
+
+  
+    <div class="column-3-of-12"><div></div></div>
+  
+    <div class="column-3-of-12"><div></div></div>
+  
+    <div class="column-3-of-12"><div></div></div>
+  
+    <div class="column-3-of-12"><div></div></div>
+  
+
+  <div class="column-8-of-12"><div></div></div>
+  <div class="column-4-of-12"><div></div></div>
+
+  <div class="column-6-of-12"><div></div></div>
+  <div class="column-2-of-12"><div></div></div>
+  <div class="column-1-of-12"><div></div></div>
+  <div class="column-3-of-12"><div></div></div>
+
+  <div class="column-1-of-12"><div></div></div>
+  <div class="column-2-of-12"><div></div></div>
+  <div class="column-3-of-12"><div></div></div>
+  <div class="column-4-of-12"><div></div></div>
+  <div class="column-2-of-12"><div></div></div>
+
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+  <div class="column-1-of-12"><div></div></div>
+  
+
+  
+  <div class="column-6-of-12"><div></div></div>
+  
+  <div class="column-6-of-12"><div></div></div>
+  
+
+
+</div>
+
+</section>
+  <section class="monospace">
+  <h3>CodePen Examples</h3>
+  <ul>
+    <li><a href="http://codepen.io/jleonard/pen/OMwLNM" target="_blank">Basic Grid System</a></li>
+    <li><a href="http://bit.ly/2n7MBbW" target="_blank">CSS Properties That Style Type</a></li>
+    <li><a href="http://codepen.io/jleonard/pen/PZBpYd" target="_blank">A Basic Media Query Demo</a></li>
+    <li><a href="http://codepen.io/jleonard/pen/qrxJRj" target="_blank">The CSS Box Model</a></li>
+  </ul>
+
+
+</section>
+
+<section class="monospace">
+  <h3>Demo: The CSS Box Model</h3>
+  <div class="centered">
+    <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/C260kLBYwMg&hl=en&fs=1"><param name="allowFullScreen" value="true"><embed src="http://www.youtube.com/v/C260kLBYwMg&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></object>
+  </div>
+</section>
+
+
 
   <section class="inverse" tab-index="0">
     <h4>Crafting UX Week 4</h4>
@@ -59,7 +287,7 @@
     <p>Conditional rules for changing a view's appearance or functionality.</p>
   </section>
 
-  <section class="grid inverse">
+  <section class="m-grid inverse">
   <h3>
     Try it on codepen <a href="http://bit.ly/20co3bg" target="_blank">bit.ly/20co3bg</a>
   </h3>

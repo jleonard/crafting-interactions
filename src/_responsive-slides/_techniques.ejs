@@ -1,0 +1,41 @@
+<section class='monospace'>
+  <h3>How do we achieve responsive design?</h3>
+  <ol>
+    <li>Identify <em>breakpoints</em> where your layout needs to change.</li>
+    <li>Scale layout proportionally in-between the breakpoints.</li>
+  </ol>
+</section>
+
+<section class='monospace'>
+  <h3>Technique: Media Queries (aka breakpoints)</h3>
+  <p>Conditional rules for changing a view's appearance or functionality.</p>
+  <p>
+    Try it <a href='http://bit.ly/2mY3i7S' target='_blank'>http://bit.ly/2mY3i7S</a>
+  </p>
+</section>
+
+<section class='grid inverse'>
+<pre class='major' style='overflow:hidden;'><code class='lang-css'>p{
+  color: #222;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+@media (min-width: 1200px){ 
+  p{
+    font-size: 64px;
+  }
+}
+</code></pre>
+</section>
+
+<section class='monospace'>
+  <h3>Technique: Use fluid measurements to scale proportionally.</h3>
+  <p>Fluid measurements use percentages instead of fixed pixel values.</p>
+  <p>
+    Try it <a href='http://bit.ly/2nSMPBt' target='_blank'>http://bit.ly/2nSMPBt</a>
+  </p>
+</section>
+
+
+
