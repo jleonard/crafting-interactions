@@ -9,6 +9,16 @@
 </section>
 -->
 
+  <section class='inverse monospace'>
+    <h3>Advice for working responsive</h3>
+    <ol>
+      <li>Find a prototyping tool you're comfortable working with so you can test responsive states without a developer.</li>
+      <li>Avoid the waste of <em>over-comping</em>. Trying to maintain 2-3 alternate views for each screen you're designing for can become a productivity sinkhole.</li>
+      <li>Evaluating work on a artboard won't provide the same insights as a browser or mobile phone.</li>
+      <li>Don't design in <em>waterfall</em>; designing an entire screen in one form-factor and then moving on to the next. Instead, focus on one form factor but stop every once and awhile and consider the implications for responsive states.</li>
+    </ol>
+  </section>
+
 <section class='monospace'>
   <h3>CodePen Examples</h3>
   <ul>
@@ -34,18 +44,57 @@
 
 </section>
 
-<section class='monospace'>
+<section class='monospace inverse'>
   
   <div class='m-grid'>
-    <div class='column-6'>
-      <h3>Assignment: Option 1</h3>
-      <p>Using codepen, create a page that describes 5 html tags.</p>
+    <div class='column-12-of-12'>
+
+      <h2>Assignment : Option 1</h2>
+      <p>Using <strong>codepen</strong>, create a page that describes 5 CSS Rules.</p>
+      <p>Each entry needs have the rule name, a short description of it's purpose and an example of the rule applied to an html element.</p>
+      <p>Use CSS to style the html. The page should have a clear information hierarchy and layout. You'll be evaluated on the clarity and readability of the content.</p>
+      <p>Use the <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Reference' target='_blank'>MDN documentation</a> to find the list of rules.</p>
+      <p>Look at <a href='http://concisecss.com/documentation/'>Concise CSS's documentation</a> as a reference for clear style and hierarchy.</p>
+
+      <h3><strong>css rules that will help you in your task</strong></h3>
+      <ul>
+        <li><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/background-color'>background-color</a></li>
+        <li><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/margin'>margin</a></li>
+        <li><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/padding'>padding</a></li>
+        <li><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/border'>border</a></li>
+        <li><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/font-size'>font-size</a></li>
+        <li><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/font-family'>font-family</a></li>
+      </ul>
     </div>
 
-    <div class='column-6'>
+    <div class='column-12-of-12'>
+      <h2>Assignment : Option 2</h2>
+      <p>Everything from Option 1 with a focus on css animations and/or transitions with <em>working</em> examples.</p>
+
+      <h3><strong>css rules that will help you in your task</strong></h3>
+      <ul>
+        <%
+        var arr = ['transition-property','transition-delay','transition-duration','@keyframes','animation-name','animation-delay','animation-duration','animation-timing-function','animation-direction'];
+        %>
+        <%
+          var len = arr.length;
+          for(var ii = 0; ii < len; ii++){
+            var cur = arr[ii];
+            %>
+             <li><a href='https://developer.mozilla.org/en-US/docs/Web/CSS/<%- cur %>' target='_blank'><%- cur %></a></li>
+            <%
+          }
+        %>
+      </ul>
     </div>
   </div>
 
 </section>
+
+<section class='monospace'>
+    <h3>Today's lecture can be found at:</h3>
+    <h4><a href='http://bit.ly/2nJYmH0' target='_blank'>bit.ly/2nJYmH0</a></h4>
+    <h4>When you've completed this week's assignment, slack me your codepen urls.</h4>
+  </section>
 
 
