@@ -39,12 +39,17 @@ p{
 </section>
 
 <section class="inverse monospace">
+  <h3>Thoughts on the reading?</h3>
+  <p><a href="https://alistapart.com/article/language-of-modular-design">The Language of Modular Design</a></p>
+</section>
+
+<section class="inverse monospace">
   <h3>This week</h3>
   <h2>Responsive Web Design</h2>
 </section>
 
 <section class="monospace">
-  <p>Being responsive is about making dynamic changes to appearance of your website to accommodate for different screen sizes.</p>
+  <p>Being responsive is about making dynamic changes to appearance of your website to accommodate different screen sizes.</p>
 </section>
 
 <section class="monospace inverse">
@@ -76,14 +81,6 @@ p{
   </p>
 </section>
 
-<section class="monospace">
-  <h3>Technique: Use fluid measurements to scale proportionally.</h3>
-  <p>Fluid measurements use percentages instead of fixed pixel values.</p>
-  <p>
-    Try it <a href="http://bit.ly/2nSMPBt" target="_blank">http://bit.ly/2nSMPBt</a>
-  </p>
-</section>
-
 <section class="grid inverse">
 <pre class="major" style="overflow:hidden"><code class="lang-css">p{
   color: #222;
@@ -98,6 +95,25 @@ p{
 }
 </code></pre>
 </section>
+
+<section class="monospace">
+  <h3>Technique: Use fluid measurements to scale proportionally.</h3>
+  <p>Fluid measurements use percentages instead of fixed pixel values.</p>
+  <p>
+    Try it <a href="http://bit.ly/2nSMPBt" target="_blank">http://bit.ly/2nSMPBt</a>
+  </p>
+</section>
+
+<section class="monospace inverse">
+  <h3>Let's look at how some people are doing responsive and what the challenges are.</h3>
+  <ul>
+    <li><a href="https://products.office.com/en-us/mac/microsoft-office-for-mac?WT.mc_id=oan_mscom_prog_mac_targeted" target="_blank">Microsoft</a></li>
+    <li><a href="https://us.etrade.com">ETrade</a></li>
+    <li><a href="https://www.nytimes.com/">NY Times</a></li>
+  </ul>
+</section>
+
+
 
 
   <section class="grid-demo">
@@ -221,7 +237,28 @@ p{
 </div>
 
 </section>
-  <section class="monospace">
+  <!--
+<section class='monospace'>
+  <h3>Best Practices for Working Responsive</h3>
+  <ul>
+    <li>Get designs into code or a reponsive prototyping tool as soon as possible. Tools like Sketch and Photoshop aren't designed for responsive.</li>
+    <li>Avoid over-producing wires or comps to capture responsive states. Having 3+ versions of every screen is complicated to maintain.</li>
+    <li>Test on devices.</li>
+  </ul>
+</section>
+-->
+
+  <section class="inverse monospace">
+    <h3>Advice for working responsive</h3>
+    <ol>
+      <li>Find a prototyping tool you're comfortable working with so you can test responsive states without a developer.</li>
+      <li>Avoid the waste of <em>over-comping</em>. Trying to maintain 2-3 alternate views for each screen you're designing for can become a productivity sinkhole.</li>
+      <li>Evaluating work on a artboard won't provide the same insights as a browser or mobile phone.</li>
+      <li>Don't design in <em>waterfall</em>; designing an entire screen in one form-factor and then moving on to the next. Instead, focus on one form factor but stop every once and awhile and consider the implications for responsive states.</li>
+    </ol>
+  </section>
+
+<section class="monospace">
   <h3>CodePen Examples</h3>
   <ul>
     <li><a href="http://codepen.io/jleonard/pen/OMwLNM" target="_blank">Basic Grid System</a></li>
@@ -229,130 +266,86 @@ p{
     <li><a href="http://codepen.io/jleonard/pen/PZBpYd" target="_blank">A Basic Media Query Demo</a></li>
     <li><a href="http://codepen.io/jleonard/pen/qrxJRj" target="_blank">The CSS Box Model</a></li>
   </ul>
+  
+  <h3>Resources</h3>
+  <ul>
+    <li><a href="https://github.com/bouchenoiremarc/Sketch-Constraints">Sketch Constraints Plugin</a></li>
+    <li><a href="https://github.com/matt-curtis/Fluid-for-Sketch">Fluid Plugin for Sketch</a></li>
+  </ul>
+</section>
 
+<section class="monospace">
+  
+  <div class="centered">
+    <h3>Demo:<br>The CSS Box Model</h3>
+    <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/C260kLBYwMg&hl=en&fs=1"><param name="allowFullScreen" value="true"><embed src="http://www.youtube.com/v/C260kLBYwMg&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></object>
+  </div>
+
+</section>
+
+<section class="monospace inverse">
+  
+  <div class="m-grid">
+    <div class="column-12-of-12">
+
+      <h2>Assignment : Option 1</h2>
+      <p>Using <strong>codepen</strong>, create a page that describes 5 CSS Rules.</p>
+      <p>Each entry needs have the rule name, a short description of it's purpose and an example of the rule applied to an html element.</p>
+      <p>Use CSS to style the html. The page should have a clear information hierarchy and layout. You'll be evaluated on the clarity and readability of the content.</p>
+      <p>Use the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">MDN documentation</a> to find the list of rules.</p>
+      <p>Look at <a href="http://concisecss.com/documentation/">Concise CSS's documentation</a> as a reference for clear style and hierarchy.</p>
+
+      <h3><strong>css rules that will help you in your task</strong></h3>
+      <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">background-color</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin">margin</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding">padding</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">border</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">font-size</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">font-family</a></li>
+      </ul>
+    </div>
+
+    <div class="column-12-of-12">
+      <h2>Assignment : Option 2</h2>
+      <p>Everything from Option 1 with a focus on css animations and/or transitions with <em>working</em> examples.</p>
+
+      <h3><strong>css rules that will help you in your task</strong></h3>
+      <ul>
+        
+        
+             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property" target="_blank">transition-property</a></li>
+            
+             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay" target="_blank">transition-delay</a></li>
+            
+             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transition-duration" target="_blank">transition-duration</a></li>
+            
+             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" target="_blank">@keyframes</a></li>
+            
+             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-name" target="_blank">animation-name</a></li>
+            
+             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-delay" target="_blank">animation-delay</a></li>
+            
+             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-duration" target="_blank">animation-duration</a></li>
+            
+             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" target="_blank">animation-timing-function</a></li>
+            
+             <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction" target="_blank">animation-direction</a></li>
+            
+      </ul>
+    </div>
+  </div>
 
 </section>
 
 <section class="monospace">
-  <h3>Demo: The CSS Box Model</h3>
-  <div class="centered">
-    <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/C260kLBYwMg&hl=en&fs=1"><param name="allowFullScreen" value="true"><embed src="http://www.youtube.com/v/C260kLBYwMg&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></object>
-  </div>
-</section>
-
-
-
-  <section class="inverse" tab-index="0">
-    <h4>Crafting UX Week 4</h4>
-    <h2>R<span class="hide-small">esponsive </span>W<span class="hide-small">eb </span>D<span class="hide-small">esign</span></h2>
-  </section>
-
-  <section class="meta">
-    <h3>Homework</h3>
-    <img src="img/component.png">
-  </section>
-
-  <section class="inverse">
-    <h2>What is responsive?</h2>
-  </section>
-
-  <!--
-    TODO separation of concerns.
-  -->
-
-  <section class="minor inverse">
-  <img src="img/water.jpg" class="centered">
-</section>
-
-  <section>
-    <h3>Getting responsive right requires...</h3>
-    <ul style="max-width: 70%">
-      <li>Deliberate planning and attention to how an experience is constructed.</li>
-      <li>Prototyping!</li>
-      <li>Qualitative &amp; quantitative research. Testing with users &amp; getting metrics on usage.</li>
-    </ul>
-  </section>
-
-  <section class="meta">
-    <h3>Get into code!</h3>
-    <p>Avoid the waste of <em>over-comping</em> and solve problems in code when possible.</p>
-  </section>
-
-  <section class="inverse">
-    <h2>How does responsive work?</h2>
-  </section>
-
-  <section>
-    <h3>Media Queries aka breakpoints</h3>
-    <p>Conditional rules for changing a view's appearance or functionality.</p>
-  </section>
-
-  <section class="m-grid inverse">
-  <h3>
-    Try it on codepen <a href="http://bit.ly/20co3bg" target="_blank">bit.ly/20co3bg</a>
-  </h3>
-<pre class="major" style="overflow:hidden"><code class="lang-css">p{
-  color: #222;
-  font-size: 32px;
-  font-weight: bold;
-}
-
-@media (min-width: 1200px){ 
-  p{
-    font-size: 64px;
-  }
-}
-</code></pre>
-</section>
-
-<section class="image">
-  <div style="background-image: url('img/just-do-it.jpg')"></div>
-  <h2 class="centered" style="text-align:center">In Class Activity <br>Build a responsive nav</h2>
-</section>
-
-<section class="inverse">
-  <a href="downloads/responsive-nav-desktop.png"><img src="downloads/responsive-nav-desktop.png"></a>
-  <a href="downloads/responsive-nav-tablet.png"><img src="downloads/responsive-nav-tablet.png"></a>
-  <a href="downloads/responsive-nav-mobile.png"><img src="downloads/responsive-nav-mobile.png"></a>
-  <a href="downloads/responsive-nav-mobile-expanded.png"><img src="downloads/responsive-nav-mobile-expanded.png"></a>
-
-  <h3>Get the nav activity <a href="http://bit.ly/1S3uxK1">bit.ly/1S3uxK1</a></h3>
-</section>
-
-  <section>
-    <h2>Fluid Layout Demo</h2>
-    <h3>Try it on codepen <a href="http://bit.ly/20cobYd">bit.ly/20cobYd</a></h3>
-  </section>
-
-  <section class="image">
-    <div style="background-image: url('img/shia-2.jpg')"></div>
-    <h2 class="centered" style="text-align:center">In Class Activity <br>Build a responsive grid</h2>
-  </section>
-
-  <section class="inverse">
-    <a href="downloads/grid-desktop.png"><img src="downloads/grid-desktop.png"></a>
-    <a href="downloads/grid-mobile.png"><img src="downloads/grid-mobile.png"></a>
-    <h3>Get the grid activity <a href="http://bit.ly/1PlzmZy">bit.ly/1PlzmZy</a></h3>
-  </section>
-
-  <section class="meta grid">
-    <div>
-    <h3>All the CodePen work from class is collected <a href="http://codepen.io/collection/AQbZpW/">here</a>.</h3> <p class="minor">Over the course of the semester I'll be adding more. Most are small single-purpose recipes to help you grasp a specific concept.</p>
-    </div>
-
-    <div>
-      <h3>Assignment</h3>
-      <p class="minor">Continue working on the nav &amp; grid activities. Try and pick one and get it pixel perfect.</p>
-      <p class="minor">If you want to go one step further, try combining the grid &amp; nav into one responsive page.</p>
-      <p class="minor">Email <a href="mailto:thejohnleonard@gmail.com">me</a> with questions. 
-    When you're done, send me a codepen url.</p>
-    </div>
-  </section>
-
-  <section class="meta">
     <h3>Today's lecture can be found at:</h3>
-    <h2><a href="http://bit.ly/1SvR5DK" target="_blank">bit.ly/1SvR5DK</a></h2>
+    <h4><a href="http://bit.ly/2nJYmH0" target="_blank">bit.ly/2nJYmH0</a></h4>
+    <h4>When you've completed this week's assignment, slack me your codepen urls.</h4>
   </section>
+
+
+
 
 </div>
     </main>
